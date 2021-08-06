@@ -1,55 +1,43 @@
-# npm tarball license parser
-license parser
+# NodeSecure i18n
+Internationalization utilities for NodeSecure Scanner and CLI.
 
 ## Requirements
-- [Node.js](https://nodejs.org/en/) v12 or higher
+- [Node.js](https://nodejs.org/en/) v14 or higher
 
 ## Getting Started
 
 This package is available in the Node Package Repository and can be easily installed with [npm](https://docs.npmjs.com/getting-started/what-is-npm) or [yarn](https://yarnpkg.com).
 
 ```bash
-$ npm i ntlp
+$ npm i @nodesecure/i18n
 # or
-$ yarn add ntlp
+$ yarn add @nodesecure/i18n
 ```
 
 ## Usage example
 
 ```js
-import parseLicense from "@nodesource/ntlp";
+import * as i18n from "@nodesecure/i18n";
 
-async function main() {
-    const license = await parseLicense(__dirname);
-    console.log(license);
-}
-main().catch(console.error);
-```
+await i18n.setLocalLang("french");
 
-Return the following interface
-```ts
-interface license {
-    uniqueLicenseIds: string[];
-    spdxLicenseLinks: string[];
-    spdx: {
-        osi: boolean;
-        fsf: boolean;
-        fsfAndOsi: boolean;
-        includesDeprecated: boolean;
-    },
-    from: string;
-}
+console.log(i18n.getToken("cli.executing_at"));
 
-interface result {
-    licenses: license[];
-    uniqueLicenseIds: Set<string>;
-}
+// Using parameters
+console.log(i18n.getToken("cli.min_nodejs_version", "14"));
 ```
 
 ## API
 
-### parseLicense(dest: string): Promise< ntlp.result >
-parse a given tarball directory and return a result interface.
+See TypeScript definition file.
+
+```ts
+type languages = "french" | "english";
+
+export function getLocalLang(): languages;
+export function setLocalLang(newLanguage: languages): Promise<void>;
+export function getToken(token: string, ...parameters);
+```
 
 ## License
 MIT

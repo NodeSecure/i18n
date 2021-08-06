@@ -1,25 +1,10 @@
-declare namespace ntlp {
-    interface license {
-        uniqueLicenseIds: string[];
-        spdxLicenseLinks?: string[];
-        spdx?: {
-            osi: boolean;
-            fsf: boolean;
-            fsfAndOsi: boolean;
-            includesDeprecated: boolean;
-        };
-        from: string;
-    }
+declare namespace i18n {
+  type languages = "french" | "english";
 
-    interface result {
-        licenses: license[];
-        hasMultipleLicenses: boolean;
-        uniqueLicenseIds: string[];
-    }
-
+  export function getLocalLang(): languages;
+  export function setLocalLang(newLanguage: languages): Promise<void>;
+  export function getToken(token: string, ...parameters);
 }
 
-declare function ntlp(tarballDir: string): Promise<ntlp.result>;
-
-export = ntlp;
-export as namespace ntlp;
+export = i18n;
+export as namespace i18n;
