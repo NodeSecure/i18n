@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NodeSecure/liparser.git"
+    "url": "git+https://github.com/NodeSecure/i18n.git"
   },
   "keywords": [
     "i18n",
@@ -25,9 +25,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NodeSecure/liparser/issues"
+    "url": "https://github.com/NodeSecure/i18n/issues"
   },
-  "homepage": "https://github.com/NodeSecure/liparser#readme",
+  "homepage": "https://github.com/NodeSecure/i18n#readme",
   "devDependencies": {
     "@nodesecure/eslint-config": "^1.0.0",
     "@small-tech/esm-tape-runner": "^1.0.3",
