@@ -6,6 +6,9 @@ import lodashGet from "lodash.get";
 import { CACHE_PATH, CURRENT_LANG } from "./src/constants.js";
 import * as languages from "./languages/index.js";
 
+import { taggedString } from "./src/utils.js";
+export { taggedString }
+
 export const CONSTANTS = Object.seal({
   CACHE_PATH, CURRENT_LANG, LANG_UPDATED: true
 });
