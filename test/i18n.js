@@ -31,8 +31,13 @@ test("getLocalLang: force update on the local lang!", async(tape) => {
   tape.end();
 });
 
+test("getLocalLang should return english by default", async(tape) => {
+  tape.strictEqual(i18n.getLocalLang(), "english")
+  tape.end()
+})
+
 test("setLocalLang to english", async(tape) => {
   await i18n.setLocalLang("english");
-
-  tape.end();
+  tape.strictEqual(i18n.getLocalLang(), "english")
+  tape.end()
 });
