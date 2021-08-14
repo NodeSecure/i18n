@@ -44,6 +44,15 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "kecsou",
+      "name": "Kévin VOYER",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33313541?v=4",
+      "profile": "http://www.linkedin.com/in/kvoyer",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,
