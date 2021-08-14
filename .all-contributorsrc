@@ -35,6 +35,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "antoineneff",
+      "name": "Antoine Neff",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9216777?v=4",
+      "profile": "https://antoineneff.me",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,
