@@ -7,7 +7,7 @@ import { CACHE_PATH, CURRENT_LANG } from "./src/constants.js";
 import * as languages from "./languages/index.js";
 
 import { taggedString } from "./src/utils.js";
-export { taggedString }
+export { taggedString };
 
 export const CONSTANTS = Object.seal({
   CACHE_PATH, CURRENT_LANG, LANG_UPDATED: true
@@ -31,6 +31,17 @@ export function getLocalLang() {
 
 export async function setLocalLang(selectedLang) {
   await cacache.put(CACHE_PATH, "cli-lang", selectedLang);
+  CONSTANTS.LANG_UPDATED = true;
+}
+
+export function getLanguages() {
+  const currentLang = getLocalLang();
+
+  const langs = Object.keys(languages);
+  langs.splice(langs.indexOf(currentLang), 1);
+  langs.unshift(currentLang);
+
+  return langs;
 }
 
 export function getToken(token, ...params) {
@@ -50,4 +61,3 @@ export function getToken(token, ...params) {
 
   return params.length === 0 ? langToken : langToken(...params);
 }
-
