@@ -51,7 +51,7 @@ export function taggedString(str: string, ...keys: any[]): (...keys: any[]) => s
 ## Contributors ✨
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -67,6 +67,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://antoineneff.me"><img src="https://avatars.githubusercontent.com/u/9216777?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Antoine Neff</b></sub></a><br /><a href="#translation-antoineneff" title="Translation">🌍</a></td>
     <td align="center"><a href="http://www.linkedin.com/in/kvoyer"><img src="https://avatars.githubusercontent.com/u/33313541?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kévin VOYER</b></sub></a><br /><a href="#translation-kecsou" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/AlexandreMalaj"><img src="https://avatars.githubusercontent.com/u/32218832?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alexandre Malaj</b></sub></a><br /><a href="#translation-AlexandreMalaj" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://github.com/Kawacrepe"><img src="https://avatars.githubusercontent.com/u/40260517?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Vincent Dhennin</b></sub></a><br /><a href="https://github.com/NodeSecure/i18n/commits?author=Kawacrepe" title="Code">💻</a> <a href="https://github.com/NodeSecure/i18n/commits?author=Kawacrepe" title="Documentation">📖</a></td>
   </tr>
 </table>
 
