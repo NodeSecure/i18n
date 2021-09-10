@@ -62,6 +62,16 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "Kawacrepe",
+      "name": "Vincent Dhennin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40260517?v=4",
+      "profile": "https://github.com/Kawacrepe",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
