@@ -4,7 +4,7 @@
 [![Security Responsible Disclosure](https://img.shields.io/badge/Security-Responsible%20Disclosure-yellow.svg)](https://github.com/nodejs/security-wg/blob/master/processes/responsible_disclosure_template.md
 )
 [![mit](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/NodeSecure/i18n/blob/master/LICENSE)
-![dep](https://img.shields.io/david/NodeSecure/i18n)
+![build](https://img.shields.io/github/workflow/status/NodeSecure/i18n/Node.js%20CI)
 
 Internationalization utilities for NodeSecure Scanner and CLI.
 
