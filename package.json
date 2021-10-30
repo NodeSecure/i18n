@@ -7,8 +7,7 @@
     "lint": "cross-env eslint index.js",
     "test-only": "cross-env esm-tape-runner 'test/**/*.js' | tap-monkey",
     "test": "npm run lint && npm run test-only",
-    "coverage": "c8 -r html npm test",
-    "check": "npm run lint && npm test"
+    "coverage": "c8 -r html npm test"
   },
   "repository": {
     "type": "git",
