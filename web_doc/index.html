@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>i18n web documentation</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./assets/nodejs-new-logo.png" alt="i18n logo" />
+      </div>
+    </header>
+    <section>
+      <div class="toggle-title">
+        <h1>Keys list</h1>
+        <div class="toggle-btn">
+          <span>FR</span>
+          <span>EN</span>
+          <div class="toggle-ball"></div>
+        </div>
+      </div>
+      <div class="keys-list_FR">
+        <div class="table-key">
+          <div class="key-label">executing_at</div>
+          <div class="key-cmd">"Exécution de node-secure à"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">min_nodejs_version</div>
+          <div class="key-cmd">
+            tS`node-secure nécessite au moins Node.js ${0}
+          </div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">min_nodejs_version</div>
+          <div class="key-cmd">
+            tS`node-secure nécessite au moins Node.js ${0} pour fonctionner !
+            Merci de mettre à jour votre version de Node.js.`
+          </div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">no_dep_to_proceed</div>
+          <div class="key-cmd">"Aucune dépendance pour continuer !"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">successfully_written_json</div>
+          <div class="key-cmd">
+            tS`Ecriture du fichier de résultats réalisée avec succès ici : ${0}`
+          </div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">http_server_started:</div>
+          <div class="key-cmd">"Serveur HTTP démarré sur :"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">commands.option_depth</div>
+          <div class="key-cmd">
+            "Niveau de profondeur de dépendances maximum à aller chercher"
+          </div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">commands.option_output</div>
+          <div class="key-cmd">"Nom de sortie du fichier json"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">commands.strategy</div>
+          <div class="key-cmd">"Source de vulnérabilités à utiliser"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">commands.hydrate_db</div>
+          <div class="key-cmd">"Mise à jour de la base de vulnérabilité"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">commands.hydrate_db.running</div>
+          <div class="key-cmd">
+            tS`Mise à jour locale des vulnérabilités avec la base '${0}'...`
+          </div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">commands.hydrate_db.success</div>
+          <div class="key-cmd">
+            tS`Base de vulnérabilités mise à jour avec succès en ${0}`
+          </div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">cwd.desc</div>
+          <div class="key-cmd">
+            "Démarre une analyse de sécurité sur le dossier courant"
+          </div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">cwd.option_nolock</div>
+          <div class="key-cmd">
+            "Désactive l'utilisation du package-lock.json"
+          </div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">cwd.option_full</div>
+          <div class="key-cmd">
+            "Active l'analyse complète des packages présents dans le
+            package-lock.json"
+          </div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">from.desc</div>
+          <div class="key-cmd">
+            "Démarre une analyse de sécurité sur un package donné du registre
+            npm"
+          </div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">from.searching</div>
+          <div class="key-cmd">
+            tS`Recherche du manifest '${0}' dans le registre npm...`,
+          </div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">from.fetched</div>
+          <div class="key-cmd">
+            tS`Manifest du package ${0} importé de npm en ${1}`
+          </div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">auto.desc</div>
+          <div class="key-cmd">
+            "Démarre une analyse de sécurité sur le dossier courant ou sur un
+            package donné et ouvre automatiquement l'interface web"
+          </div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">auto.option_keep</div>
+          <div class="key-cmd">
+            "Conserve le fichier nsecure-result.json sur le systeme après
+            l'exécution"
+          </div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">open.option_port</div>
+          <div class="key-cmd">"Port à utiliser"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">verify.desc</div>
+          <div class="key-cmd">
+            "Démarre une analyse AST avancée pour un package npm donné"
+          </div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">verify.option_json</div>
+          <div class="key-cmd">
+            "Affiche le résultat d'analyse dans la sortie standard"
+          </div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">summary.desc</div>
+          <div class="key-cmd">"Afficher le résultat de votre analyse"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">lang.desc</div>
+          <div class="key-cmd">"Configure le langage par défaut du CLI"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">lang.question_text</div>
+          <div class="key-cmd">"Quel langage souhaitez-vous utiliser ?"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">lang.new_selection</div>
+          <div class="key-cmd">
+            tS`'${0}' a été selectionné comme étant le nouveau langage du CLI !`
+          </div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">dep_tree</div>
+          <div class="key-cmd">"arbre de dépendances"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">fetch_and_walk_deps</div>
+          <div class="key-cmd">
+            "Importation et analyse de l'intégralité des dépendances..."
+          </div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">fetch_on_registry</div>
+          <div class="key-cmd">
+            "En attente de l'importation des packages du registre npm..."
+          </div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">waiting_tarball</div>
+          <div class="key-cmd">En attente de l'analyse des tarballs..."</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">fetch_metadata</div>
+          <div class="key-cmd">"Metadonnées importées :"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">analyzed_tarball</div>
+          <div class="key-cmd">"Tarballs en cours d'analyse :"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">success_fetch_deptre</div>
+          <div class="key-cmd">
+            tS`Analyse de l'${0} terminée avec succès en ${1}`
+          </div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">success_tarball</div>
+          <div class="key-cmd">
+            tS`${0} tarballs analysés avec succès en ${1}`
+          </div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">success_registry_metadata</div>
+
+          <div class="key-cmd">
+            "Metadonnées requises pour tous les packages importées avec succès
+            !"
+          </div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">failed_rmdir</div>
+          <div class="key-cmd">tS`Suppression du dossier ${0} échouée !`</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">stats.title</div>
+          <div class="key-cmd">"Stats Globales"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">stats.total_packages</div>
+          <div class="key-cmd">"Total des packages"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">stats.total_size</div>
+          <div class="key-cmd">"Poids total"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">stats.indirect_deps</div>
+          <div class="key-cmd">"Packages avec dépendances indirectes"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">stats.extensions</div>
+          <div class="key-cmd">"Extensions"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">stats.licenses</div>
+          <div class="key-cmd">"Licences</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">stats.maintainers</div>
+          <div class="key-cmd">"Mainteneurs"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">package_info.show_children</div>
+          <div class="key-cmd">"Afficher les enfants"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">package_info.hide_children</div>
+          <div class="key-cmd">"Cacher les enfants"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">package_info.vuln</div>
+          <div class="key-cmd">"vuln"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">package_info.files_extensions</div>
+          <div class="key-cmd">"extensions des fichiers"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">package_info.unused_deps</div>
+          <div class="key-cmd">"dépendances non utilisées"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">package_info.missing_deps</div>
+          <div class="key-cmd">"dépendances manquantes"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">package_info.minified_files</div>
+          <div class="key-cmd">"fichiers minifiées"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">package_info.node_deps</div>
+          <div class="key-cmd">"dépendances node.js"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">package_info.third_party_deps</div>
+          <div class="key-cmd">"dépendances tierces"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">package_info.required_files</div>
+          <div class="key-cmd">"fichiers requis"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">package_info.used_by</div>
+          <div class="key-cmd">"utilisé par"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">popups.licenses</div>
+          <div class="key-cmd list">
+            <span class="obj-titles">title: "Licenses",</span>
+            <span class="obj-titles"> name: "Nom",</span>
+            <span class="obj-titles">from: "fichier source"</span>
+          </div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">warnings.title</div>
+          <div class="key-cmd">"Warnings"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">warnings.homepage</div>
+          <div class="key-cmd">"Page d'accueil"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">warnings.type</div>
+          <div class="key-cmd">"type"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">warnings.file</div>
+          <div class="key-cmd">"fichier"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">warnings.errorMsg</div>
+          <div class="key-cmd">"valeur incriminée"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">warnings.position</div>
+          <div class="key-cmd">"position"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">warnings.inspect</div>
+          <div class="key-cmd">"inspecter"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">searchbar_placeholder</div>
+          <div class="key-cmd">"Recherche"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">btn_emojis_legends</div>
+          <div class="key-cmd">"Légende des émojis"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">show_complete_desc</div>
+          <div class="key-cmd">
+            "Sélectionnez un package pour voir une description complète ici"
+          </div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">loading_nodes</div>
+          <div class="key-cmd">"... Chargement des noeuds ..."</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">please_wait</div>
+          <div class="key-cmd">"(Merci de patienter)"</div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">disable_scarf</div>
+          <div class="key-cmd">
+            "Cette dépendance peut récolter des données contre votre volonté,
+            pensez donc à la désactiver en fournissant la variable
+            d'environnement SCARF_ANALYTICS"
+          </div>
+        </div>
+        <div class="table-key">
+          <div class="key-label">keylogging</div>
+          <div class="key-cmd">
+            "Cette dépendance peut obtenir vos entrées clavier ou de souris.
+            Cette dépendance peut être utilisée en tant que 'keylogging'
+            attacks/malwares."
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer></footer>
+  </body>
+</html>
