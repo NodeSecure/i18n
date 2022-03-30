@@ -1,6 +1,7 @@
 // Import Third-party Depedencies
 import cacache from "cacache";
 import lodashGet from "lodash.get";
+import compile from "zup";
 
 // Import Internals
 import { CACHE_PATH, CURRENT_LANG } from "./src/constants.js";
