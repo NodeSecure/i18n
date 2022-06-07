@@ -32,6 +32,7 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
@@ -73,12 +74,16 @@ select {
   }
 }
 
+:root {
+  --primary: #ffff; 
+  --secondary: #5a44da;
+}
+
 header {
-  background-color: black;
   width: 100vw;
-  height: 20vh;
+  height: 25vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center
 }
 section {
@@ -88,83 +93,46 @@ section {
   width:100vw;
   margin-bottom: 2rem;
 }
-.logo{
-  width: 10%;
+h1 {
+  display: block;
+  font-size: 2rem;
 }
-.toggle-title{
-  width: 90%;
+.header_title{
   display: flex;
-  justify-content: space-between;
-  margin-block: 2rem;
-  padding-left: 1rem;
-}
-h1{
-  font-size:2rem;
-}
-.toggle-btn{
-  display: flex;
-  justify-content: space-around;
   align-items: center;
-  position:relative;
-  color:white;
-  background: black;
-  width:7%;
-  border-radius: 5rem;
-  margin-right: 1rem;
+  padding: 0.5rem;
+  color: var(--secondary);
+  font-size:1.5rem;
+  font-weight: 500
 }
-.toggle-ball{
-  position: absolute;
-  left: 3px;
-  background: #74a962;
-  width:2.8rem;
-  height:2.8rem;
-  border-radius:50%;
+.logo{
+  display: flex;
+  justify-content: center;
+  background-color: #3621ae;
+  border-radius: 100%;
+  width: 75px;
+  height: 75px;
+  margin: 2.5rem 1rem 2.5rem 2.5rem;
 }
-.keys-list_FR{
+.links{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 90%;
-  height: auto;
-  overflow: scroll;
+  justify-content: space-around;
+  height: 100%;
+  padding: 4.5rem 2.5rem 0 0;
 }
-.keys-list{
-  color: white;
-  background: black;
-  margin-inline: 1rem;
+.links_icons{
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 1.5rem;
+ 
 }
-.table-key{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  background: black;
-  border: 1px solid white;
+select{
+  font-weight: 500;
+  border: none;
+  color: var(--secondary)
 }
-.key-label {
-  color: white;
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-}
-.key-cmd{
-  color: white;
-  width: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 1rem;
-  border-left: 1px solid white
-}
-.obj-titles{
-  margin-left: 10px;
-}
-span{
-  display:block;
-}
-footer{
-  height: 5vh;
-  background: black;
+h2{
+  color: var(--secondary)
 }
