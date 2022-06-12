@@ -39,7 +39,7 @@
   },
   "type": "module",
   "dependencies": {
-    "cacache": "^16.0.7",
+    "cacache": "^16.1.0",
     "lodash.get": "^4.4.2"
   }
 }
