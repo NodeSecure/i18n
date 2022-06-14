@@ -77,37 +77,34 @@ export const ui = {
     maintainers: "Mainteneurs"
   },
   package_info: {
-    show_children: "Afficher les enfants",
-    hide_children: "Cacher les enfants",
-    vuln: "Vuln",
-    files_extensions: "extensions des fichiers",
-    unused_deps: "dépendances non utilisées ",
-    missing_deps: "dépendances manquantes",
-    minified_files: "fichiers minifiées",
-    node_deps: "dépendances node.js",
-    third_party_deps: "dépendances tierces",
-    required_files: "fichiers requis",
-    used_by: "utilisé par"
-  },
-  popups: {
-    licenses: {
-      title: "Licences",
-      name: "Nom",
-      from: "fichier source"
+    navigation: {
+      overview: "vue d'ensemble",
+      files: "fichiers",
+      dependencies: "scripts & dépendances",
+      warnings: "menaces dans le code",
+      vulnerabilities: "vulnérabilités",
+      licenses: "conformité des licences (SPDX)"
     },
-    warnings: {
-      title: "Warnings",
-      homepage: "Page d'accueil",
-      type: "type",
-      file: "fichier",
-      errorMsg: "valeur incriminée",
-      position: "position",
-      inspect: "inspecter"
+    title: {
+      maintainers: "mainteneurs",
+      releases: "versions publiées",
+      files: "fichiers",
+      files_extensions: "extensions des fichiers",
+      unused_deps: "dépendances non utilisées ",
+      missing_deps: "dépendances manquantes",
+      minified_files: "fichiers minifiés",
+      node_deps: "dépendances node.js",
+      third_party_deps: "dépendances tierces",
+      required_files: "fichiers requis",
+      used_by: "utilisé par"
+    },
+    helpers: {
+      warnings: "En savoir plus sur les alertes avec le",
+      spdx: "En savoir plus sur le projet SPDX",
+      here: "ici"
     }
   },
   searchbar_placeholder: "Recherche",
-  btn_emojis_legends: "Légende des émojis",
-  show_complete_desc: "Sélectionnez un package pour voir une description complète ici",
   loading_nodes: "... Chargement des noeuds ...",
   please_wait: "(Merci de patienter)"
 };
@@ -128,5 +125,6 @@ export const sast_warnings = {
   encoded_literal: "Un code littérale a été découvert (il peut s'agir d'une valeur hexa, d'une séquence unicode, d'une chaîne de caractères base64, etc.)",
   short_identifiers: "Cela signifie que tous les identifiants ont une longueur moyenne inférieure à 1,5. Seulement possible si le fichier contient plus de 5 identifiants.",
   suspicious_literal: "Cela signifie que la somme des scores suspects de tous les littéraux est supérieure à 3.",
-  obfuscated_code: "Il y a une très forte probabilité que le code soit obscurci..."
-}
+  obfuscated_code: "Il y a une très forte probabilité que le code soit obscurci...",
+  weak_crypto: "Le code contient probablement un algorithme de chiffrement faiblement sécurisé (md5, sha1...)."
+};

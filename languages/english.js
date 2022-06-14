@@ -77,37 +77,34 @@ export const ui = {
     maintainers: "Maintainers"
   },
   package_info: {
-    show_children: "Show children",
-    hide_children: "Hide children",
-    vuln: "Vuln",
-    files_extensions: "files extensions",
-    unused_deps: "unused dependencies",
-    missing_deps: "missing dependencies",
-    minified_files: "minified files",
-    node_deps: "node.js dependencies",
-    third_party_deps: "third-party dependencies",
-    required_files: "required files",
-    used_by: "used by"
-  },
-  popups: {
-    licenses: {
-      title: "Licenses",
-      name: "Name",
-      from: "from (file)"
+    navigation: {
+      overview: "overview",
+      files: "files",
+      dependencies: "scripts & dependencies",
+      warnings: "threats in source code",
+      vulnerabilities: "vulnerabilities (CVE)",
+      licenses: "licenses conformance (SPDX)"
     },
-    warnings: {
-      title: "Warnings",
-      homepage: "Homepage",
-      type: "type",
-      file: "file",
-      errorMsg: "incrimined value",
-      position: "position",
-      inspect: "inspect"
+    title: {
+      maintainers: "maintainers",
+      releases: "releases",
+      files: "files",
+      files_extensions: "files extensions",
+      unused_deps: "unused dependencies",
+      missing_deps: "missing dependencies",
+      minified_files: "minified files",
+      node_deps: "node.js dependencies",
+      third_party_deps: "third-party dependencies",
+      required_files: "required files",
+      used_by: "used by"
+    },
+    helpers: {
+      warnings: "Learn more about warnings in the",
+      spdx: "Learn more about the SPDX project",
+      here: "here"
     }
   },
   searchbar_placeholder: "Search",
-  btn_emojis_legends: "Emojis legend",
-  show_complete_desc: "Select a package to show a complete description here",
   loading_nodes: "... Loading nodes ...",
   please_wait: "(Please wait)"
 };
@@ -126,5 +123,6 @@ export const sast_warnings = {
   encoded_literal: "An encoded literal has been detected (it can be an hexa value, unicode sequence, base64 string etc)",
   short_identifiers: "This mean that all identifiers has an average length below 1.5. Only possible if the file contains more than 5 identifiers.",
   suspicious_literal: "This mean that the sum of suspicious score of all Literals is bigger than 3.",
-  obfuscated_code: "There's a very high probability that the code is obfuscated..."
-}
+  obfuscated_code: "There's a very high probability that the code is obfuscated...",
+  weak_crypto: "The code probably contains a weak crypto algorithm (md5, sha1...)"
+};
