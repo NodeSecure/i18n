@@ -92,7 +92,7 @@ export const ui = {
       files_extensions: "extensions des fichiers",
       unused_deps: "dépendances non utilisées ",
       missing_deps: "dépendances manquantes",
-      minified_files: "fichiers minifiées",
+      minified_files: "fichiers minifiés",
       node_deps: "dépendances node.js",
       third_party_deps: "dépendances tierces",
       required_files: "fichiers requis",
