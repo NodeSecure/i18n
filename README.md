@@ -6,7 +6,11 @@
 [![mit](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/NodeSecure/i18n/blob/master/LICENSE)
 ![build](https://img.shields.io/github/workflow/status/NodeSecure/i18n/Node.js%20CI)
 
-Internationalization utilities for NodeSecure Scanner and CLI.
+Internationalization (**i18n**) utilities for NodeSecure tools like [CLI](https://github.com/NodeSecure/cli). 
+
+Supported languages:
+- french
+- english
 
 ## Requirements
 - [Node.js](https://nodejs.org/en/) v14 or higher
@@ -34,6 +38,8 @@ console.log(i18n.getToken("cli.executing_at"));
 console.log(i18n.getToken("cli.min_nodejs_version", "14"));
 ```
 
+You can consult the real use case of the API in the following codes: [here](https://github.com/NodeSecure/cli/blob/master/src/commands/lang.js) and [here](https://github.com/NodeSecure/cli/blob/master/src/commands/vulnerability.js).
+
 ## API
 
 See TypeScript definition file.
@@ -46,6 +52,15 @@ export function setLocalLang(newLanguage: languages): Promise<void>;
 export function getToken(token: string, ...parameters);
 export function getLanguages(): languages[];
 export function taggedString(str: string, ...keys: any[]): (...keys: any[]) => string;
+```
+
+## Contributing
+Feel free to add a new language. You need to take inspiration from the two supported languages and replicate the same keys.
+
+Then export it in the `index.js` file (example if we want to add a chinese translation).
+
+```js
+export * as chinese  from "./chinese.js";
 ```
 
 ## Contributors ✨
