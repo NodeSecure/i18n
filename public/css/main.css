@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'mononokiBold';
+  src: url('/public/fonts/mononoki-Bold.woff2') format('woff2'),
+    url('/public/fonts/mononoki-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'mononokiRegular';
+  src: url('/public/fonts/mononoki-Regular.woff2') format('woff2'),
+    url('/public/fonts/mononoki-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --color-primary: #5A44DA;
+  --color-dark-grey: #8A83B6;
+  --color-light-grey: #F4F3F8;
+  --color-white: #fff;
+}
+body{
+  font-family: mononokiBold, sans-serif;
+}
