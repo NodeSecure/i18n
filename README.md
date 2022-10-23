@@ -52,6 +52,14 @@ export function getLanguages(): languages[];
 export function taggedString(str: string, ...keys: any[]): (...keys: any[]) => string;
 ```
 
+## Generate documentation
+
+You can generate a static webpage by using the `build:documentation` npm script:
+
+```bash
+$ npm run build:documentation
+```
+
 ## Contributing
 Feel free to add a new language. You need to take inspiration from the two supported languages and replicate the same keys.
 
