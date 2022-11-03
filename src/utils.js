@@ -1,4 +1,3 @@
-
 export function taggedString(chaines, ...cles) {
   return function cur(...valeurs) {
     const dict = valeurs[valeurs.length - 1] || {};

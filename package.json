@@ -7,7 +7,8 @@
     "lint": "cross-env eslint index.js",
     "test-only": "cross-env esm-tape-runner 'test/**/*.js' | tap-monkey",
     "test": "npm run lint && npm run test-only",
-    "coverage": "c8 -r html npm test"
+    "coverage": "c8 -r html npm test",
+    "build:documentation": "node ./scripts/index.js"
   },
   "repository": {
     "type": "git",
@@ -35,7 +36,8 @@
     "@small-tech/tap-monkey": "^1.4.0",
     "c8": "^7.11.3",
     "cross-env": "^7.0.3",
-    "tape": "^5.5.3"
+    "tape": "^5.5.3",
+    "zup": "^0.0.1"
   },
   "type": "module",
   "dependencies": {
