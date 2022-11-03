@@ -92,6 +92,17 @@
         "maintenance",
         "review"
       ]
+    },
+    {
+      "login": "im-codebreaker",
+      "name": "im_codebreaker",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53506859?v=4",
+      "profile": "https://codebreaker.fr/",
+      "contributions": [
+        "code",
+        "doc",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -99,5 +110,6 @@
   "projectOwner": "NodeSecure",
   "repoType": "github",
   "repoHost": "https://github.com",
-  "skipCi": true
+  "skipCi": true,
+  "commitConvention": "angular"
 }
