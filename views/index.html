@@ -5,29 +5,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NodeSecure - i18n</title>
-  <link rel="stylesheet" href="/public/css/reset.css">
-  <link rel="stylesheet" href="/public/css/main.css">
+  <link rel="stylesheet" href="./public/css/reset.css">
+  <link rel="stylesheet" href="./public/css/main.css">
 </head>
 <body>
   <header class="header">
     <div class="header__title">
-      <img src="/public/img/nodesecure-logo.png" width="62" height="62" alt="NodeSecure Organization logo">
+      <img src="./public/img/nodesecure-logo.png" width="62" height="62" alt="NodeSecure Organization logo">
       <h1>NodeSecure - i18n</h1>
     </div>
     <ul class="header__links">
       <li class="header__links-item">
         <a href="https://github.com/NodeSecure" target="_blank" rel="noreferrer">
-          <img src="/public/img/github.png" width="32" height="32" class="icon" alt="Github official logo">
+          <img src="./public/img/github.png" width="32" height="32" class="icon" alt="Github official logo">
         </a>
       </li>
       <li class="header__links-item">
         <a href="https://dev.to/nodesecure" target="_blank" rel="noreferrer">
-          <img src="/public/img/devto.png" width="32" height="32" class="icon" alt="Dev.to official logo">
+          <img src="./public/img/devto.png" width="32" height="32" class="icon" alt="Dev.to official logo">
         </a>
       </li>
       <li class="header__links-item">
         <a href="https://www.linkedin.com/company/nodesecure/" target="_blank" rel="noreferrer">
-          <img src="/public/img/linkedin.png" width="32" height="32" class="icon" alt="Linkedin official logo">
+          <img src="./public/img/linkedin.png" width="32" height="32" class="icon" alt="Linkedin official logo">
         </a>
       </li>
     </ul>
@@ -46,7 +46,7 @@
         <button id="table-ui-tab" class="table__tabs-item" type="button" role="tab" aria-controls="table-ui" aria-selected="false">UI</button>
         <button id="table-warnings-tab" class="table__tabs-item" type="button" role="tab" aria-controls="table-warnings" aria-selected="false">WARNINGS</button>
         <button id="table-sast-warnings-tab" class="table__tabs-item" type="button" role="tab" aria-controls="table-sast-warnings" aria-selected="false">SAST_WARNINGS</button>
-      </nav>   
+      </nav>
       <table id="table-cli" class="table active" role="tabpanel" aria-labelledby="table-cli-tab">
         <thead>
           <tr>
@@ -54,21 +54,21 @@
             <th>Value</th>
           </tr>
         </thead>
-        <tbody class="en active">         
+        <tbody class="en active">
         [[ for (props in z.template('cli', 'english')) { ]]
           <tr>
             <td>[[-z.printKey(props)]]</td>
             <td>[[-z.printValue(props, z.template('cli', 'english'))]]</td>
           </tr>
-        [[ } ]]   
+        [[ } ]]
         </tbody>
-        <tbody class="fr">         
+        <tbody class="fr">
           [[ for (props in z.template('cli', 'french')) { ]]
             <tr>
               <td>[[-z.printKey(props)]]</td>
               <td>[[-z.printValue(props, z.template('cli', 'french'))]]</td>
             </tr>
-          [[ } ]]   
+          [[ } ]]
           </tbody>
       </table>
       <table id="table-depwalker" class="table" role="tabpanel" aria-labelledby="table-depwalker-tab">
@@ -78,13 +78,13 @@
             <th>Value</th>
           </tr>
         </thead>
-        <tbody class="en">         
+        <tbody class="en">
           [[ for (props in z.template('depWalker', 'english')) { ]]
             <tr>
               <td>[[-z.printKey(props)]]</td>
               <td>[[-z.printValue(props, z.template('depWalker', 'english'))]]</td>
             </tr>
-          [[ } ]]   
+          [[ } ]]
           </tbody>
           <tbody class="fr">
             [[ for (props in z.template('depWalker', 'french')) { ]]
@@ -92,7 +92,7 @@
                 <td>[[-z.printKey(props)]]</td>
                 <td>[[-z.printValue(props, z.template('depWalker', 'french'))]]</td>
               </tr>
-            [[ } ]]   
+            [[ } ]]
             </tbody>
       </table>
       <table id="table-ui" class="table" role="tabpanel" aria-labelledby="table-ui-tab">
@@ -102,21 +102,21 @@
             <th>Value</th>
           </tr>
         </thead>
-        <tbody class="en">         
+        <tbody class="en">
           [[ for (props in z.template('ui', 'english')) { ]]
             <tr>
               <td>[[-z.printKey(props)]]</td>
               <td>[[-z.printValue(props, z.template('ui', 'english'))]]</td>
             </tr>
-          [[ } ]]   
+          [[ } ]]
           </tbody>
-          <tbody class="fr">         
+          <tbody class="fr">
             [[ for (props in z.template('ui', 'french')) { ]]
               <tr>
                 <td>[[-z.printKey(props)]]</td>
                 <td>[[-z.printValue(props, z.template('ui', 'french'))]]</td>
               </tr>
-            [[ } ]]   
+            [[ } ]]
             </tbody>
       </table>
       <table id="table-warnings" class="table" role="tabpanel" aria-labelledby="table-warnings-tab">
@@ -126,21 +126,21 @@
             <th>Value</th>
           </tr>
         </thead>
-        <tbody class="en">         
+        <tbody class="en">
           [[ for (props in z.template('warnings', 'english')) { ]]
             <tr>
               <td>[[-z.printKey(props)]]</td>
               <td>[[-z.printValue(props, z.template('warnings', 'english'))]]</td>
             </tr>
-          [[ } ]]   
+          [[ } ]]
           </tbody>
-        <tbody class="fr">         
+        <tbody class="fr">
           [[ for (props in z.template('warnings', 'french')) { ]]
             <tr>
               <td>[[-z.printKey(props)]]</td>
               <td>[[-z.printValue(props, z.template('warnings', 'french'))]]</td>
             </tr>
-          [[ } ]]   
+          [[ } ]]
           </tbody>
       </table>
       <table id="table-sast-warnings" class="table" role="tabpanel" aria-labelledby="table-sast-warnings-tab">
@@ -150,25 +150,25 @@
             <th>Value</th>
           </tr>
         </thead>
-        <tbody class="en">         
+        <tbody class="en">
           [[ for (props in z.template('sast_warnings', 'english')) { ]]
             <tr>
               <td>[[-z.printKey(props)]]</td>
               <td>[[-z.printValue(props, z.template('sast_warnings', 'english'))]]</td>
             </tr>
-          [[ } ]]   
+          [[ } ]]
           </tbody>
-        <tbody class="fr">         
+        <tbody class="fr">
           [[ for (props in z.template('sast_warnings', 'french')) { ]]
             <tr>
               <td>[[-z.printKey(props)]]</td>
               <td>[[-z.printValue(props, z.template('sast_warnings', 'french'))]]</td>
             </tr>
-          [[ } ]]   
+          [[ } ]]
           </tbody>
       </table>
-    </div>  
+    </div>
   </main>
-  <script src="/public/js/main.js"></script>
+  <script src="./public/js/main.js"></script>
 </body>
 </html>

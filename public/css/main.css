@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'mononokiBold';
-  src: url('/public/fonts/mononoki-Bold.woff2') format('woff2'),
-    url('/public/fonts/mononoki-Bold.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/mononoki-Bold.woff2') format('woff2'),
+    url('../fonts/mononoki-Bold.eot?#iefix') format('embedded-opentype');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'mononokiRegular';
-  src: url('/public/fonts/mononoki-Regular.woff2') format('woff2'),
-    url('/public/fonts/mononoki-Regular.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/mononoki-Regular.woff2') format('woff2'),
+    url('../fonts/mononoki-Regular.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -99,8 +99,8 @@ body{
   position: absolute;
   top: calc(50% - 4px);
   right: 0;
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   border-top: 4px solid #5A44DA;
