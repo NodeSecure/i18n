@@ -83,7 +83,7 @@ export const ui = {
       dependencies: "scripts & dependencies",
       warnings: "threats in source code",
       vulnerabilities: "vulnerabilities (CVE)",
-      licenses: "licenses conformance (SPDX)"
+      licenses: "licenses conformance (SPDX)",
     },
     title: {
       maintainers: "maintainers",
@@ -96,12 +96,14 @@ export const ui = {
       node_deps: "node.js dependencies",
       third_party_deps: "third-party dependencies",
       required_files: "required files",
-      used_by: "used by"
+      used_by: "used by",
+      openSsfScorecard: "OpenSSF Scorecard"
     },
     helpers: {
       warnings: "Learn more about warnings in the",
       spdx: "Learn more about the SPDX project",
-      here: "here"
+      here: "here",
+      openSsf: "Learn more about the OpenSSF Scorecards"
     }
   },
   searchbar_placeholder: "Search",
