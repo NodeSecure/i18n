@@ -83,7 +83,7 @@ export const ui = {
       dependencies: "scripts & dependencies",
       warnings: "threats in source code",
       vulnerabilities: "vulnerabilities (CVE)",
-      licenses: "licenses conformance (SPDX)",
+      licenses: "licenses conformance (SPDX)"
     },
     title: {
       maintainers: "maintainers",
