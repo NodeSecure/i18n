@@ -72,7 +72,7 @@ export * as chinese  from "./chinese.js";
 ## Contributors ✨
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -95,6 +95,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center"><a href="https://github.com/Mathieuka"><img src="https://avatars.githubusercontent.com/u/34446722?v=4?s=100" width="100px;" alt="Mathieu"/><br /><sub><b>Mathieu</b></sub></a><br /><a href="https://github.com/NodeSecure/i18n/commits?author=Mathieuka" title="Code">💻</a> <a href="#translation-Mathieuka" title="Translation">🌍</a></td>
       <td align="center"><a href="https://dev.to/antoinecoulon"><img src="https://avatars.githubusercontent.com/u/43391199?v=4?s=100" width="100px;" alt="Antoine Coulon"/><br /><sub><b>Antoine Coulon</b></sub></a><br /><a href="#maintenance-antoine-coulon" title="Maintenance">🚧</a> <a href="https://github.com/NodeSecure/i18n/pulls?q=is%3Apr+reviewed-by%3Aantoine-coulon" title="Reviewed Pull Requests">👀</a></td>
       <td align="center"><a href="https://codebreaker.fr/"><img src="https://avatars.githubusercontent.com/u/53506859?v=4?s=100" width="100px;" alt="im_codebreaker"/><br /><sub><b>im_codebreaker</b></sub></a><br /><a href="https://github.com/NodeSecure/i18n/commits?author=im-codebreaker" title="Code">💻</a> <a href="https://github.com/NodeSecure/i18n/commits?author=im-codebreaker" title="Documentation">📖</a> <a href="#design-im-codebreaker" title="Design">🎨</a></td>
+      <td align="center"><a href="https://github.com/PierreDemailly"><img src="https://avatars.githubusercontent.com/u/39910767?v=4?s=100" width="100px;" alt="PierreDemailly"/><br /><sub><b>PierreDemailly</b></sub></a><br /><a href="https://github.com/NodeSecure/i18n/commits?author=PierreDemailly" title="Code">💻</a> <a href="#translation-PierreDemailly" title="Translation">🌍</a></td>
     </tr>
   </tbody>
 </table>
