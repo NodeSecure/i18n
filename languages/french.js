@@ -96,12 +96,14 @@ export const ui = {
       node_deps: "dépendances node.js",
       third_party_deps: "dépendances tierces",
       required_files: "fichiers requis",
-      used_by: "utilisé par"
+      used_by: "utilisé par",
+      openSsfScorecard: "Fiche de score OpenSSF"
     },
     helpers: {
       warnings: "En savoir plus sur les alertes avec le",
       spdx: "En savoir plus sur le projet SPDX",
-      here: "ici"
+      here: "ici",
+      openSsf: "En savoir plus sur les fiches de score OpenSSF"
     }
   },
   searchbar_placeholder: "Recherche",
