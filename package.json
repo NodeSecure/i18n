@@ -41,7 +41,7 @@
   },
   "type": "module",
   "dependencies": {
-    "cacache": "^17.0.1",
+    "cacache": "^17.0.2",
     "lodash.get": "^4.4.2"
   }
 }
