@@ -97,7 +97,7 @@ export const ui = {
       third_party_deps: "third-party dependencies",
       required_files: "required files",
       used_by: "used by",
-      openSsfScorecard: "OpenSSF Scorecard"
+      openSsfScorecard: "Security Scorecard"
     },
     helpers: {
       warnings: "Learn more about warnings in the",
