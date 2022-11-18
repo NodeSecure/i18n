@@ -43,7 +43,8 @@ export const cli = {
       option_json: "Affiche le résultat d'analyse dans la sortie standard"
     },
     summary: {
-      desc: "Afficher le résultat de votre analyse"
+      desc: "Afficher le résultat de votre analyse",
+      warnings: "Menaces"
     },
     lang: {
       desc: "Configure le langage par défaut du CLI",

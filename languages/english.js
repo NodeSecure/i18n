@@ -43,7 +43,8 @@ export const cli = {
       option_json: "Stdout the analysis payload"
     },
     summary: {
-      desc: "Display your analysis results"
+      desc: "Display your analysis results",
+      warnings: "Warnings"
     },
     lang: {
       desc: "Configure the CLI default language",
