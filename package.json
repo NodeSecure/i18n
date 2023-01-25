@@ -1,6 +1,6 @@
 {
   "name": "@nodesecure/i18n",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "NodeSecure Internationalization",
   "exports": "./index.js",
   "scripts": {
