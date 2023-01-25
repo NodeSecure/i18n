@@ -50,6 +50,9 @@ export const cli = {
       desc: "Configure le langage par défaut du CLI",
       question_text: "Quel langage souhaitez-vous utiliser ?",
       new_selection: tS`'${0}' a été selectionné comme étant le nouveau langage du CLI !`
+    },
+    scorecard: {
+      desc: "Afficher la fiche de score OSSF du repo donné ou du repertoire actuel (Github uniquement ex. fastify/fastify)"
     }
   }
 };
