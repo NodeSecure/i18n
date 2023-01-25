@@ -52,7 +52,7 @@ export const cli = {
       new_selection: tS`'${0}' has been selected as the new CLI language!`
     },
     scorecard: {
-      desc: "Display cwd or given repository OSSF Scorecard (Github only e.g fastify/fastify)"
+      desc: "Display the OSSF Scorecard for a given repository or the current working directory (Github only, e.g. fastify/fastify)"
     }
   }
 };
