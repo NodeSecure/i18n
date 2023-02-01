@@ -3,9 +3,9 @@
 // Import Internal Dependencies
 import { taggedString as tS } from "../src/utils.js";
 
-export const lang = "fr";
+const lang = "fr";
 
-export const cli = {
+const cli = {
   executing_at: "Exécution de node-secure à",
   min_nodejs_version: tS`node-secure nécessite au moins Node.js ${0} pour fonctionner ! Merci de mettre à jour votre version de Node.js.`,
   no_dep_to_proceed: "Aucune dépendance pour continuer !",
@@ -57,7 +57,7 @@ export const cli = {
   }
 };
 
-export const depWalker = {
+const depWalker = {
   dep_tree: "arbre de dépendances",
   fetch_and_walk_deps: "Importation et analyse de l'intégralité des dépendances...",
   fetch_on_registry: "En attente de l'importation des packages du registre npm...",
@@ -70,7 +70,7 @@ export const depWalker = {
   failed_rmdir: tS`Suppression du dossier ${0} échouée !`
 };
 
-export const ui = {
+const ui = {
   stats: {
     title: "Stats Globales",
     total_packages: "Total des packages",
@@ -115,12 +115,12 @@ export const ui = {
   please_wait: "(Merci de patienter)"
 };
 
-export const warnings = {
+const warnings = {
   disable_scarf: "Cette dépendance peut récolter des données contre votre volonté, pensez donc à la désactiver en fournissant la variable d'environnement SCARF_ANALYTICS",
   keylogging: "Cette dépendance peut obtenir vos entrées clavier ou de souris. Cette dépendance peut être utilisée en tant que 'keylogging' attacks/malwares."
 };
 
-export const sast_warnings = {
+const sast_warnings = {
   ast_error: `Une erreur s'est produite lors de l'analyse du code JavaScript avec meriyah.
               Cela signifie que la conversion de la chaîne de caractères AST a échoué.
               Si vous rencontrez une telle erreur, veuillez ouvrir une issue.`,
@@ -134,3 +134,5 @@ export const sast_warnings = {
   obfuscated_code: "Il y a une très forte probabilité que le code soit obscurci...",
   weak_crypto: "Le code contient probablement un algorithme de chiffrement faiblement sécurisé (md5, sha1...)."
 };
+
+export const french = { lang, cli, depWalker, ui, warnings, sast_warnings };

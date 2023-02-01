@@ -3,9 +3,9 @@
 // Require Internal Dependencies
 import { taggedString as tS } from "../src/utils.js";
 
-export const lang = "en";
+const lang = "en";
 
-export const cli = {
+const cli = {
   executing_at: "Executing node-secure at",
   min_nodejs_version: tS`node-secure requires at least Node.js ${0} to work! Please upgrade your Node.js version.`,
   no_dep_to_proceed: "No dependencies to proceed!",
@@ -57,7 +57,7 @@ export const cli = {
   }
 };
 
-export const depWalker = {
+const depWalker = {
   dep_tree: "dependency tree",
   fetch_and_walk_deps: "Fetching and walking through all dependencies...",
   fetch_on_registry: "Waiting for packages to fetch from npm registry...",
@@ -70,7 +70,7 @@ export const depWalker = {
   failed_rmdir: tS`Failed to remove directory ${0}!`
 };
 
-export const ui = {
+const ui = {
   stats: {
     title: "Global Stats",
     total_packages: "Total of packages",
@@ -115,12 +115,12 @@ export const ui = {
   please_wait: "(Please wait)"
 };
 
-export const warnings = {
+const warnings = {
   disable_scarf: "This dependency could collect data against your will so think to disable it with the env var: SCARF_ANALYTICS",
   keylogging: "This dependency can retrieve your keyboard and mouse inputs. It can be used for 'keylogging' attacks/malwares."
 };
 
-export const sast_warnings = {
+const sast_warnings = {
   ast_error: "An error occured when parsing the JavaScript code with meriyah. It mean that the conversion from string to AST as failed. If you encounter such an error, please open an issue here.",
   unsafe_import: "Unable to follow an import (require, require.resolve) statement/expr.",
   unsafe_regex: "A RegEx as been detected as unsafe and may be used for a ReDoS Attack.",
@@ -132,3 +132,5 @@ export const sast_warnings = {
   obfuscated_code: "There's a very high probability that the code is obfuscated...",
   weak_crypto: "The code probably contains a weak crypto algorithm (md5, sha1...)"
 };
+
+export const english = { lang, cli, depWalker, ui, warnings, sast_warnings };
