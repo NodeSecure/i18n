@@ -6,7 +6,7 @@ declare namespace i18n {
   export function getToken(token: string, ...parameters);
   export function getLanguages(): languages[];
   export function taggedString(str: string, ...keys: any[]): (...keys: any[]) => string;
-  export function extend(extendLanguage: sring);
+  export function extend(language: string, tokens: Record<string, any>): void;
 }
 
 export = i18n;

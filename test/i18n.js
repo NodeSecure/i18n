@@ -48,3 +48,15 @@ test("get languages", async(tape) => {
   tape.same(i18n.getLanguages(), ["french", "english"]);
   tape.end();
 });
+
+test("Extend existing language", (tape) => {
+  i18n.extend("french", { welcome: "Bienvenue" });
+  tape.deepEqual(i18n.getToken("welcome"), "Bienvenue");
+  tape.end();
+});
+
+test("Add new language", async(tape) => {
+  i18n.extend("spanish", { welcome: "Bienvenido" });
+  await i18n.setLocalLang("spanish");
+  tape.deepEqual(i18n.getToken("welcome"), "Bienvenido");
+});

@@ -5,7 +5,6 @@ import lodashGet from "lodash.get";
 // Import Internals
 import { CACHE_PATH, CURRENT_LANG } from "./src/constants.js";
 import { languages } from "./languages/index.js";
-import * as i18n from "@nodesecure/i18n";
 
 import { taggedString } from "./src/utils.js";
 export { taggedString };
@@ -63,11 +62,11 @@ export function getToken(token, ...params) {
   return params.length === 0 ? langToken : langToken(...params);
 }
 
-export async function extend(extendLanguage, opts = {}) {
+export function extend(extendLanguage, opts = {}) {
   if (!Reflect.has(languages, extendLanguage)) {
-    await i18n.setLocalLang(extendLanguage);
     languages[extendLanguage] = opts;
-  }
 
+    return;
+  }
   Object.assign(languages[extendLanguage], opts);
 }
