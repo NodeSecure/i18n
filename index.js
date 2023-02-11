@@ -1,6 +1,10 @@
+/* eslint-disable no-sync */
 // Import Third-party Depedencies
 import cacache from "cacache";
 import lodashGet from "lodash.get";
+
+import fs from "node:fs";
+import path from "node:path";
 
 // Import Internals
 import { CACHE_PATH, CURRENT_LANG } from "./src/constants.js";
@@ -69,4 +73,18 @@ export function extend(extendLanguage, opts = {}) {
     return;
   }
   Object.assign(languages[extendLanguage], opts);
+}
+
+export function extendFromSystemPath(languagesDirPath) {
+  if (!fs.existsSync(languagesDirPath)) {
+    throw new Error(`The ${languagesDirPath} directory does not exist on this project.`);
+  }
+  const files = (fs.readdirSync(languagesDirPath, { withFileTypes: true }))
+    .filter((dirent) => dirent.isFile() && path.extname(dirent.name) === ".js");
+
+  for (const file of files) {
+    const langName = path.basename(file.name, ".js");
+    const data = fs.readFileSync(path.join(languagesDirPath, file.name), "utf-8");
+    extend(langName, JSON.parse(data));
+  }
 }
