@@ -49,10 +49,9 @@ test("setLocalLang to french", async(tape) => {
   tape.end();
 });
 
-
 test("get languages", async(tape) => {
   await i18n.setLocalLang("french");
-  tape.same(i18n.getLanguages(), ["french", "english"]);
+  tape.same(i18n.getLanguages().sort(), ["french", "english"].sort());
   tape.end();
 });
 
