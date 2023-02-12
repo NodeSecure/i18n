@@ -14,17 +14,25 @@ import { CACHE_PATH } from "../src/constants.js";
 
 const kI18nDir = "./i18n";
 
-test("getToken: token must be a string", (tape) => {
-  tape.throws(() => {
-    i18n.getToken(10);
-  }, "token must be a string");
+test("getToken: token must be a string", async(tape) => {
+  tape.plan(1);
+  try {
+    await i18n.getToken(10);
+  }
+  catch (error) {
+    tape.ok(error);
+  }
   tape.end();
 });
 
-test("getToken: invalid token", (tape) => {
-  tape.throws(() => {
-    i18n.getToken("boo.foo");
-  });
+test("getToken: invalid token", async(tape) => {
+  tape.plan(1);
+  try {
+    await i18n.getToken("boo.foo");
+  }
+  catch (error) {
+    tape.ok(error);
+  }
   tape.end();
 });
 
@@ -32,39 +40,39 @@ test("getLocalLang: force update on the local lang!", async(tape) => {
   await cacache.rm.entry(CACHE_PATH, "cli-lang");
 
   i18n.CONSTANTS.LANG_UPDATED = true;
-  i18n.getLocalLang();
+  await i18n.getLocalLang();
 
   tape.strictEqual(i18n.CONSTANTS.LANG_UPDATED, false);
   tape.end();
 });
 
 test("getLocalLang should return english by default", async(tape) => {
-  tape.strictEqual(i18n.getLocalLang(), "english");
+  tape.strictEqual(await i18n.getLocalLang(), "english");
   tape.end();
 });
 
 test("setLocalLang to french", async(tape) => {
   await i18n.setLocalLang("french");
-  tape.strictEqual(i18n.getLocalLang(), "french");
+  tape.strictEqual(await i18n.getLocalLang(), "french");
   tape.end();
 });
 
 test("get languages", async(tape) => {
   await i18n.setLocalLang("french");
-  tape.same(i18n.getLanguages().sort(), ["french", "english"].sort());
+  tape.same((await i18n.getLanguages()).sort(), ["french", "english"].sort());
   tape.end();
 });
 
-test("Extend existing language", (tape) => {
+test("Extend existing language", async(tape) => {
   i18n.extend("french", { welcome: "Bienvenue" });
-  tape.deepEqual(i18n.getToken("welcome"), "Bienvenue");
+  tape.deepEqual(await i18n.getToken("welcome"), "Bienvenue");
   tape.end();
 });
 
 test("Add new language", async(tape) => {
   i18n.extend("spanish", { welcome: "Bienvenido" });
   await i18n.setLocalLang("spanish");
-  tape.deepEqual(i18n.getToken("welcome"), "Bienvenido");
+  tape.deepEqual(await i18n.getToken("welcome"), "Bienvenido");
   tape.end();
 });
 
@@ -84,7 +92,7 @@ test("extendFromSystemPath with existing languages directory", async(tape) => {
 
     await i18n.setLocalLang("french");
 
-    tape.deepEqual(i18n.getToken("hello"), "Bonjour");
+    tape.deepEqual(await i18n.getToken("hello"), "Bonjour");
   }
   finally {
     fs.rmdirSync(kI18nDir, { force: true, recursive: true });

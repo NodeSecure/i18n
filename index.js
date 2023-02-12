@@ -19,14 +19,14 @@ export const CONSTANTS = Object.seal({
   CACHE_PATH, CURRENT_LANG, LANG_UPDATED: true
 });
 
-export function getLocalLang() {
+export async function getLocalLang() {
   if (CONSTANTS.LANG_UPDATED) {
     try {
-      const { data } = cacache.get.sync(CACHE_PATH, "cli-lang");
+      const { data } = await cacache.get(CACHE_PATH, "cli-lang");
       CONSTANTS.CURRENT_LANG = data.toString();
     }
     catch (error) {
-      cacache.put(CACHE_PATH, "cli-lang", CURRENT_LANG);
+      await cacache.put(CACHE_PATH, "cli-lang", CURRENT_LANG);
       CONSTANTS.CURRENT_LANG = CURRENT_LANG;
     }
     CONSTANTS.LANG_UPDATED = false;
@@ -40,8 +40,8 @@ export async function setLocalLang(selectedLang) {
   CONSTANTS.LANG_UPDATED = true;
 }
 
-export function getLanguages() {
-  const currentLang = getLocalLang();
+export async function getLanguages() {
+  const currentLang = await getLocalLang();
 
   const langs = Object.keys(languages);
   langs.splice(langs.indexOf(currentLang), 1);
@@ -50,12 +50,12 @@ export function getLanguages() {
   return langs;
 }
 
-export function getToken(token, ...params) {
+export async function getToken(token, ...params) {
   if (typeof token !== "string") {
     throw new TypeError("token must be a string");
   }
 
-  const lang = getLocalLang();
+  const lang = await getLocalLang();
   if (!Reflect.has(languages, lang)) {
     throw new Error(`Invalid i18n lang -> ${lang}`);
   }
