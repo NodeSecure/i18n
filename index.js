@@ -1,10 +1,12 @@
 /* eslint-disable no-sync */
+
+// Import Node.js Dependencies
+import fs from "node:fs";
+import path from "node:path";
+
 // Import Third-party Depedencies
 import cacache from "cacache";
 import lodashGet from "lodash.get";
-
-import fs from "node:fs";
-import path from "node:path";
 
 // Import Internals
 import { CACHE_PATH, CURRENT_LANG } from "./src/constants.js";
