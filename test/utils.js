@@ -1,15 +1,15 @@
-import test from "tape";
+// Import Node.js Dependencies
+import { test } from "node:test";
+import assert from "node:assert";
 
 // Import Internal Dependencies
 import { taggedString } from "../src/utils.js";
 
-test("taggedString", (tape) => {
+test("taggedString", () => {
   const clojureHello = taggedString`Hello ${0}`;
-  tape.strictEqual(clojureHello(), "Hello ");
-  tape.strictEqual(clojureHello("world"), "Hello world");
+  assert.strictEqual(clojureHello(), "Hello ");
+  assert.strictEqual(clojureHello("world"), "Hello world");
 
   const clojureFoo = taggedString`Hello ${"word"}`;
-  tape.strictEqual(clojureFoo({ word: "bar" }), "Hello bar");
-
-  tape.end();
+  assert.strictEqual(clojureFoo({ word: "bar" }), "Hello bar");
 });

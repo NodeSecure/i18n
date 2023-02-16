@@ -69,12 +69,12 @@ export async function getToken(token, ...params) {
 }
 
 export function extend(extendLanguage, opts = {}) {
-  if (!Reflect.has(languages, extendLanguage)) {
-    languages[extendLanguage] = opts;
-
-    return;
+  if (extendLanguage in languages) {
+    Object.assign(languages[extendLanguage], opts);
   }
-  Object.assign(languages[extendLanguage], opts);
+  else {
+    languages[extendLanguage] = opts;
+  }
 }
 
 export function extendFromSystemPath(languagesDirPath) {
