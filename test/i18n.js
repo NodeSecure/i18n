@@ -52,7 +52,7 @@ describe("getLocalLang/setLocalLang", () => {
 });
 
 describe("getToken", () => {
-  it("should throw an Error when called with a token that's not a string primitive", async() => {
+  it("should throw an Error when called with an unknown language", async() => {
     await assert.rejects(
       i18n.getToken(10),
       {
@@ -93,6 +93,7 @@ describe("extend", () => {
     i18n.extend("french", {
       welcome: i18n.taggedString`Bienvenue ${0} et ${1}`
     });
+    await i18n.setLocalLang("french");
 
     assert.deepEqual(
       await i18n.getToken("welcome", "thomas", "alexandre"),
