@@ -50,11 +50,15 @@ type languages = "french" | "english";
 export function getLocalLang(): Promise<languages>;
 export function setLocalLang(newLanguage: languages): Promise<void>;
 export function getToken(token: string, ...parameters): Promise<string>;
+export function getTokenSync(token: string, ...parameters): string;
 export function getLanguages(): Promise<languages[]>;
 export function taggedString(str: string, ...keys: any[]): (...keys: any[]) => string;
 export function extend(language: string, tokens: Record<string, any>): void;
 export function extendFromSystemPath(path: string): void;
 ```
+
+> **Note**
+> Local lang must be updated otherwise `getTokenSync()` will throws. Make sure to use `await i18n.getLocalLang()` before any synchronous usage.
 
 ## Generate documentation
 

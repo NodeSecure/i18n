@@ -52,7 +52,7 @@ describe("getLocalLang/setLocalLang", () => {
 });
 
 describe("getToken", () => {
-  it("should throw an Error when called with an unknown language", async() => {
+  it("should throw an Error when called with a token that's not a string primitive", async() => {
     await assert.rejects(
       i18n.getToken(10),
       {
@@ -74,7 +74,7 @@ describe("getToken", () => {
     );
   });
 
-  it("should throw an Error when called with a token that's not a string primitive", async() => {
+  it("should throw an Error when called with an unknown language", async() => {
     const expectedLang = "foobar";
     await i18n.setLocalLang(expectedLang);
 
@@ -85,6 +85,49 @@ describe("getToken", () => {
         message: `Invalid i18n lang -> ${expectedLang}`
       }
     );
+  });
+});
+
+describe("getTokenSync", () => {
+  it("should throw an Error when called with a token that's not a string primitive", async() => {
+    await i18n.getLocalLang();
+    assert.throws(
+      () => i18n.getTokenSync(10),
+      {
+        name: "TypeError",
+        message: "token must be a string"
+      }
+    );
+  });
+
+  it("should throws if state is insure", async() => {
+    await i18n.setLocalLang("french");
+    assert.throws(
+      () => i18n.getTokenSync("lang"),
+      {
+        name: "Error",
+        message: "language has been updated, please run `await i18n.getLocalLang()` to make sure to use updated language"
+      }
+    );
+  });
+
+  it("should throw an Error when called with an unknown token", async() => {
+    await i18n.getLocalLang();
+    const expectedToken = "boo.foo";
+
+    assert.throws(
+      () => i18n.getTokenSync(expectedToken),
+      {
+        name: "Error",
+        message: `Invalid i18n token -> ${expectedToken} for lang -> french`
+      }
+    );
+  });
+
+  it("should get translation", async() => {
+    await i18n.getLocalLang();
+
+    assert.strictEqual(i18n.getTokenSync("lang"), "fr");
   });
 });
 

@@ -68,6 +68,23 @@ export async function getToken(token, ...params) {
   return params.length === 0 ? langToken : langToken(...params);
 }
 
+export function getTokenSync(token, ...params) {
+  if (typeof token !== "string") {
+    throw new TypeError("token must be a string");
+  }
+
+  if (CONSTANTS.LANG_UPDATED) {
+    throw new Error("language has been updated, please run `await i18n.getLocalLang()` to make sure to use updated language");
+  }
+
+  const langToken = lodashGet(languages[CONSTANTS.CURRENT_LANG], token);
+  if (typeof langToken === "undefined" || langToken === null) {
+    throw new Error(`Invalid i18n token -> ${token} for lang -> ${CONSTANTS.CURRENT_LANG}`);
+  }
+
+  return params.length === 0 ? langToken : langToken(...params);
+}
+
 export function extend(extendLanguage, opts = {}) {
   if (extendLanguage in languages) {
     Object.assign(languages[extendLanguage], opts);
