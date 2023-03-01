@@ -76,7 +76,7 @@ export * as chinese  from "./chinese.js";
 ## Contributors ✨
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -101,6 +101,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="https://codebreaker.fr/"><img src="https://avatars.githubusercontent.com/u/53506859?v=4?s=100" width="100px;" alt="im_codebreaker"/><br /><sub><b>im_codebreaker</b></sub></a><br /><a href="https://github.com/NodeSecure/i18n/commits?author=im-codebreaker" title="Code">💻</a> <a href="https://github.com/NodeSecure/i18n/commits?author=im-codebreaker" title="Documentation">📖</a> <a href="#design-im-codebreaker" title="Design">🎨</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/PierreDemailly"><img src="https://avatars.githubusercontent.com/u/39910767?v=4?s=100" width="100px;" alt="PierreDemailly"/><br /><sub><b>PierreDemailly</b></sub></a><br /><a href="https://github.com/NodeSecure/i18n/commits?author=PierreDemailly" title="Code">💻</a> <a href="#translation-PierreDemailly" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/fabnguess"><img src="https://avatars.githubusercontent.com/u/72697416?v=4?s=100" width="100px;" alt="Kouadio Fabrice Nguessan"/><br /><sub><b>Kouadio Fabrice Nguessan</b></sub></a><br /><a href="https://github.com/NodeSecure/i18n/commits?author=fabnguess" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/ayushmaanshrotriya"><img src="https://avatars.githubusercontent.com/u/65903307?v=4?s=100" width="100px;" alt="Ayushmaan Shrotriya"/><br /><sub><b>Ayushmaan Shrotriya</b></sub></a><br /><a href="https://github.com/NodeSecure/i18n/commits?author=ayushmaanshrotriya" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
