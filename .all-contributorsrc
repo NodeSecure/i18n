@@ -122,6 +122,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "ayushmaanshrotriya",
+      "name": "Ayushmaan Shrotriya",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65903307?v=4",
+      "profile": "https://github.com/ayushmaanshrotriya",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
