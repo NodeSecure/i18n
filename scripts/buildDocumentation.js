@@ -7,8 +7,8 @@ import { fileURLToPath } from "node:url";
 import zup from "zup";
 
 // Import Internal Dependencies
-import * as english from "../languages/english.js";
-import * as french from "../languages/french.js";
+import { english } from "../languages/english.js";
+import { french } from "../languages/french.js";
 
 
 // CONSTANTS
