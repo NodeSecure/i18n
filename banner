@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Banner</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+</body>
+</html>
+<style>
+.banner {
+	background-color: #3f51b5;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	font-size: 24px;
+}
+</style>
+
+<div class="banner">
+	My Banner
+</div>
+<script>
+function changeColor() {
+	var banner = document.querySelector(".banner");
+	banner.style.backgroundColor = "#f44336";
+}
+</script>
+
+<button onclick="changeColor()">Change Color</button>
