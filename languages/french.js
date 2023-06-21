@@ -121,7 +121,7 @@ const warnings = {
 };
 
 const sast_warnings = {
-  ast_error: `Une erreur s'est produite lors de l'analyse du code JavaScript avec meriyah.
+  parsing_error: `Une erreur s'est produite lors de l'analyse du code JavaScript avec meriyah.
               Cela signifie que la conversion de la chaîne de caractères AST a échoué.
               Si vous rencontrez une telle erreur, veuillez ouvrir une issue.`,
   unsafe_import: "Impossible de suivre l'import (require, require.resolve) statement/expr.",

@@ -121,7 +121,7 @@ const warnings = {
 };
 
 const sast_warnings = {
-  ast_error: "An error occured when parsing the JavaScript code with meriyah. It mean that the conversion from string to AST as failed. If you encounter such an error, please open an issue here.",
+  parsing_error: "An error occured when parsing the JavaScript code with meriyah. It mean that the conversion from string to AST has failed. If you encounter such an error, please open an issue here.",
   unsafe_import: "Unable to follow an import (require, require.resolve) statement/expr.",
   unsafe_regex: "A RegEx as been detected as unsafe and may be used for a ReDoS Attack.",
   unsafe_stmt: "Usage of dangerous statement like eval() or Function(\"\").",
