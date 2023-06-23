@@ -131,6 +131,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "Ineslujan",
+      "name": "Inès & Mélu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65076833?v=4",
+      "profile": "https://github.com/Ineslujan",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -139,5 +148,6 @@
   "repoType": "github",
   "repoHost": "https://github.com",
   "skipCi": true,
-  "commitConvention": "angular"
+  "commitConvention": "angular",
+  "commitType": "docs"
 }
