@@ -127,6 +127,7 @@ const sast_warnings = {
   unsafe_stmt: "Usage of dangerous statement like eval() or Function(\"\").",
   unsafe_assign: "Assignment of a protected global like process or require.",
   encoded_literal: "An encoded literal has been detected (it can be an hexa value, unicode sequence, base64 string etc)",
+  suspicious_file: "A suspicious file with more than ten encoded-literal in it.",
   short_identifiers: "This mean that all identifiers has an average length below 1.5. Only possible if the file contains more than 5 identifiers.",
   suspicious_literal: "This mean that the sum of suspicious score of all Literals is bigger than 3.",
   obfuscated_code: "There's a very high probability that the code is obfuscated...",

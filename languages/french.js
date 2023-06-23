@@ -131,6 +131,7 @@ const sast_warnings = {
   encoded_literal: "Un code littérale a été découvert (il peut s'agir d'une valeur hexa, d'une séquence unicode, d'une chaîne de caractères base64, etc.)",
   short_identifiers: "Cela signifie que tous les identifiants ont une longueur moyenne inférieure à 1,5. Seulement possible si le fichier contient plus de 5 identifiants.",
   suspicious_literal: "Cela signifie que la somme des scores suspects de tous les littéraux est supérieure à 3.",
+  suspicious_file: "Un fichier suspect contenant plus de dix chaines de caractères encodés",
   obfuscated_code: "Il y a une très forte probabilité que le code soit obscurci...",
   weak_crypto: "Le code contient probablement un algorithme de chiffrement faiblement sécurisé (md5, sha1...).",
   shady_link: "Un Literal (string) contient une URL vers un domaine avec une extension suspecte."
