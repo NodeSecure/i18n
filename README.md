@@ -1,5 +1,3 @@
-# NodeSecure i18n
-
 <p align="center">
   <img src="https://user-images.githubusercontent.com/4438263/226019205-7d86a8d5-345f-416f-bc8d-c4aef6f12868.jpg" alt="@nodesecure/i18n">
 </p>
