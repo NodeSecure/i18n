@@ -10,7 +10,7 @@
       <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge" alt="maintenance">
     </a>
     <a href="https://github.com/NodeSecure/i18n/blob/master/LICENSE">
-      <img src="https://img.shields.io/github/license/Naereen/StrapDown.js.svg?style=for-the-badge" alt="license">
+      <img src="https://img.shields.io/github/license/NodeSecure/i18n.svg?style=for-the-badge" alt="license">
     </a>
     <a href="https://api.securityscorecards.dev/projects/github.com/NodeSecure/i18n">
       <img src="https://api.securityscorecards.dev/projects/github.com/NodeSecure/i18n/badge?style=for-the-badge" alt="OpenSSF Scorecard">
