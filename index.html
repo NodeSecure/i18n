@@ -844,7 +844,7 @@
           
             <tr>
               <td>parsing_error</td>
-              <td>An error occured when parsing the JavaScript code with meriyah. It mean that the conversion from string to AST as failed. If you encounter such an error, please open an issue here.</td>
+              <td>An error occured when parsing the JavaScript code with meriyah. It mean that the conversion from string to AST has failed. If you encounter such an error, please open an issue here.</td>
             </tr>
           
             <tr>
@@ -870,6 +870,11 @@
             <tr>
               <td>encoded_literal</td>
               <td>An encoded literal has been detected (it can be an hexa value, unicode sequence, base64 string etc)</td>
+            </tr>
+          
+            <tr>
+              <td>suspicious_file</td>
+              <td>A suspicious file with more than ten encoded-literal in it.</td>
             </tr>
           
             <tr>
@@ -940,6 +945,11 @@
             <tr>
               <td>suspicious_literal</td>
               <td>Cela signifie que la somme des scores suspects de tous les littéraux est supérieure à 3.</td>
+            </tr>
+          
+            <tr>
+              <td>suspicious_file</td>
+              <td>Un fichier suspect contenant plus de dix littéraux encodés.</td>
             </tr>
           
             <tr>
