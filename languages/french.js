@@ -134,7 +134,8 @@ const sast_warnings = {
   suspicious_file: "Un fichier suspect contenant plus de dix chaines de caractères encodés",
   obfuscated_code: "Il y a une très forte probabilité que le code soit obscurci...",
   weak_crypto: "Le code contient probablement un algorithme de chiffrement faiblement sécurisé (md5, sha1...).",
-  shady_link: "Un Literal (string) contient une URL vers un domaine avec une extension suspecte."
+  shady_link: "Un Literal (string) contient une URL vers un domaine avec une extension suspecte.",
+  invalidSemVer: "Version sémantique non valide"
 };
 
 export const french = { lang, cli, depWalker, ui, warnings, sast_warnings };
