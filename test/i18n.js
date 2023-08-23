@@ -3,7 +3,7 @@
 // Import Node.js Dependencies
 import fs from "node:fs";
 import path from "node:path";
-import { describe, it, beforeEach } from "node:test";
+import { describe, it } from "node:test";
 import assert from "node:assert";
 
 // Import Third-party Depedencies
@@ -14,10 +14,6 @@ import * as i18n from "../index.js";
 import { CACHE_PATH } from "../src/constants.js";
 
 const kI18nDir = "./i18n";
-
-beforeEach(async() => {
-  await i18n.setLocalLang("french");
-});
 
 describe("getLocalLang/setLocalLang", () => {
   it("should force update on the local lang!", async() => {
