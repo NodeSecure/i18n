@@ -3,6 +3,7 @@
 // Import Node.js Dependencies
 import fs from "node:fs";
 import path from "node:path";
+import { pathToFileURL } from "node:url";
 
 // Import Third-party Depedencies
 import cacache from "cacache";
@@ -94,7 +95,7 @@ export function extend(extendLanguage, opts = {}) {
   }
 }
 
-export function extendFromSystemPath(languagesDirPath) {
+export async function extendFromSystemPath(languagesDirPath) {
   if (!fs.existsSync(languagesDirPath)) {
     throw new Error(`The ${languagesDirPath} directory does not exist on this project.`);
   }
@@ -103,7 +104,11 @@ export function extendFromSystemPath(languagesDirPath) {
 
   for (const file of files) {
     const langName = path.basename(file.name, ".js");
-    const data = fs.readFileSync(path.join(languagesDirPath, file.name), "utf-8");
-    extend(langName, JSON.parse(data));
+    const fileLocation = path.join(languagesDirPath, file.name);
+
+    const i18nTokensFile = await import(pathToFileURL(fileLocation));
+    if ("default" in i18nTokensFile) {
+      extend(langName, i18nTokensFile.default);
+    }
   }
 }

@@ -8,7 +8,7 @@ declare namespace i18n {
   export function getLanguages(): Promise<languages[]>;
   export function taggedString(str: string, ...keys: any[]): (...keys: any[]) => string;
   export function extend(language: string, tokens: Record<string, any>): void;
-  export function extendFromSystemPath(path: string): void;
+  export function extendFromSystemPath(path: string): Promise<void>;
 }
 
 export = i18n;

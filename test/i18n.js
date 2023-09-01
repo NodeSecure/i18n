@@ -149,8 +149,8 @@ describe("extend", () => {
 });
 
 describe("extendFromSystemPath", () => {
-  it("extendFromSystemPath with non-existing languages directory", () => {
-    assert.throws(
+  it("extendFromSystemPath with non-existing languages directory", async() => {
+    await assert.rejects(
       () => i18n.extendFromSystemPath(kI18nDir),
       {
         name: "Error",
@@ -164,10 +164,11 @@ describe("extendFromSystemPath", () => {
       fs.mkdirSync(kI18nDir);
       fs.writeFileSync(
         path.join(kI18nDir, "french.js"),
-        JSON.stringify({ hello: "Bonjour" })
+        // eslint-disable-next-line quotes
+        `export default { hello: "Bonjour" }`
       );
 
-      i18n.extendFromSystemPath(kI18nDir);
+      await i18n.extendFromSystemPath(kI18nDir);
       await i18n.setLocalLang("french");
 
       assert.deepEqual(await i18n.getToken("hello"), "Bonjour");
