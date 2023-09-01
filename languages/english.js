@@ -132,7 +132,8 @@ const sast_warnings = {
   suspicious_literal: "This mean that the sum of suspicious score of all Literals is bigger than 3.",
   obfuscated_code: "There's a very high probability that the code is obfuscated...",
   weak_crypto: "The code probably contains a weak crypto algorithm (md5, sha1...)",
-  shady_link: "A Literal (string) contains an URL to a domain with a suspicious extension."
+  shady_link: "A Literal (string) contains an URL to a domain with a suspicious extension.",
+  invalidSemVer: "Invalid semantic version"
 };
 
 export const english = { lang, cli, depWalker, ui, warnings, sast_warnings };
