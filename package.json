@@ -36,6 +36,9 @@
     "zup": "^0.0.1"
   },
   "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
     "cacache": "18.0.0",
     "lodash.get": "^4.4.2"
