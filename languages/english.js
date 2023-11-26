@@ -133,7 +133,7 @@ const sast_warnings = {
   obfuscated_code: "There's a very high probability that the code is obfuscated...",
   weak_crypto: "The code probably contains a weak crypto algorithm (md5, sha1...)",
   shady_link: "A Literal (string) contains an URL to a domain with a suspicious extension.",
-  invalidSemVer: "Invalid semantic version"
+  zeroSemVer: "Semantic version starting with 0.x (unstable project or without serious versioning)"
 };
 
 export const english = { lang, cli, depWalker, ui, warnings, sast_warnings };
