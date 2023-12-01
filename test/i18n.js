@@ -140,6 +140,17 @@ describe("extend", () => {
     );
   });
 
+  it("should deeply extend the properties", async() => {
+    i18n.extend("english", { contributor: { name: "Fraxken" } });
+    i18n.extend("english", { contributor: { email: "gentilhomme.thomas@gmail.com" } });
+    await i18n.setLocalLang("english");
+
+    assert.deepEqual(
+      await i18n.getToken("contributor"),
+      { name: "Fraxken", email: "gentilhomme.thomas@gmail.com" }
+    );
+  });
+
   it("should add a new language if it doesn't exist", async() => {
     i18n.extend("spanish", { welcome: "Bienvenido" });
 

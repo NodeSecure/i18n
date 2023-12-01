@@ -69,7 +69,7 @@ export function extend(language: string, tokens: Record<string, any>): void;
 export function extendFromSystemPath(path: string): Promise<void>;
 ```
 
-> **Note**
+> [!NOTE]
 > Local lang must be updated otherwise `getTokenSync()` will throws. Make sure to use `await i18n.getLocalLang()` before any synchronous usage.
 
 ## Generate documentation

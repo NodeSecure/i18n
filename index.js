@@ -8,6 +8,7 @@ import { pathToFileURL } from "node:url";
 // Import Third-party Depedencies
 import cacache from "cacache";
 import lodashGet from "lodash.get";
+import deepmerge from "deepmerge";
 
 // Import Internals
 import { CACHE_PATH, CURRENT_LANG } from "./src/constants.js";
@@ -88,7 +89,7 @@ export function getTokenSync(token, ...params) {
 
 export function extend(extendLanguage, opts = {}) {
   if (extendLanguage in languages) {
-    Object.assign(languages[extendLanguage], opts);
+    languages[extendLanguage] = deepmerge(languages[extendLanguage], opts);
   }
   else {
     languages[extendLanguage] = opts;
