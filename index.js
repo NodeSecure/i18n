@@ -113,3 +113,7 @@ export async function extendFromSystemPath(languagesDirPath) {
     }
   }
 }
+
+export async function getAllTranslations(){
+  return languages;
+}

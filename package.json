@@ -1,6 +1,6 @@
 {
   "name": "@nodesecure/i18n",
-  "version": "3.5.0",
+  "version": "3.6.0",
   "description": "NodeSecure Internationalization",
   "exports": "./index.js",
   "scripts": {
@@ -8,7 +8,8 @@
     "test-only": "node --test test/",
     "test": "npm run lint && npm run test-only",
     "coverage": "c8 -r html npm test",
-    "build:documentation": "node ./scripts/buildDocumentation.js"
+    "build:documentation": "node ./scripts/buildDocumentation.js",
+    "fetch:i18n": "node ./scripts/fetchi18n.js"
   },
   "repository": {
     "type": "git",
@@ -32,12 +33,13 @@
   "homepage": "https://github.com/NodeSecure/i18n#readme",
   "devDependencies": {
     "@nodesecure/eslint-config": "^1.8.0",
+    "@nodesecure/github": "^1.2.0",
     "c8": "^8.0.1",
     "zup": "^0.0.1"
   },
   "type": "module",
   "engines": {
-    "node": ">=18"
+    "node": "^20.12.0 || >=21.7.0"
   },
   "dependencies": {
     "cacache": "^18.0.0",

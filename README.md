@@ -44,10 +44,10 @@ import * as i18n from "@nodesecure/i18n";
 
 await i18n.setLocalLang("french");
 
-console.log(i18n.getToken("cli.executing_at"));
+console.log(i18n.getToken("depWalker.dep_tree"));
 
 // Using parameters
-console.log(i18n.getToken("cli.min_nodejs_version", "14"));
+console.log(i18n.getToken("depWalker.success_tarball", "14", "15ms"));
 ```
 
 You can consult the real use case of the API in the following codes: [here](https://github.com/NodeSecure/cli/blob/master/src/commands/lang.js) and [here](https://github.com/NodeSecure/cli/blob/master/src/commands/vulnerability.js).
@@ -67,6 +67,7 @@ export function getLanguages(): Promise<languages[]>;
 export function taggedString(str: string, ...keys: any[]): (...keys: any[]) => string;
 export function extend(language: string, tokens: Record<string, any>): void;
 export function extendFromSystemPath(path: string): Promise<void>;
+export function getAllTranslations(): Promise<object>;
 ```
 
 > [!NOTE]
@@ -79,6 +80,10 @@ You can generate a static webpage by using the `build:documentation` npm script:
 ```bash
 $ npm run build:documentation
 ```
+
+> [!WARNING]
+> Make sure to fetch the translations from the `scanner` and `CLI` projects locally using the following npm script: `npm run fetch:i18n`.
+
 
 ## Contributing
 Feel free to add a new language. You need to take inspiration from the two supported languages and replicate the same keys.
