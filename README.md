@@ -44,10 +44,10 @@ import * as i18n from "@nodesecure/i18n";
 
 await i18n.setLocalLang("french");
 
-console.log(i18n.getToken("cli.executing_at"));
+console.log(i18n.getToken("depWalker.dep_tree"));
 
 // Using parameters
-console.log(i18n.getToken("cli.min_nodejs_version", "14"));
+console.log(i18n.getToken("depWalker.success_tarball", "14", "15ms"));
 ```
 
 You can consult the real use case of the API in the following codes: [here](https://github.com/NodeSecure/cli/blob/master/src/commands/lang.js) and [here](https://github.com/NodeSecure/cli/blob/master/src/commands/vulnerability.js).
