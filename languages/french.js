@@ -5,58 +5,6 @@ import { taggedString as tS } from "../src/utils.js";
 
 const lang = "fr";
 
-const cli = {
-  executing_at: "Exécution de node-secure à",
-  min_nodejs_version: tS`node-secure nécessite au moins Node.js ${0} pour fonctionner ! Merci de mettre à jour votre version de Node.js.`,
-  no_dep_to_proceed: "Aucune dépendance pour continuer !",
-  successfully_written_json: tS`Ecriture du fichier de résultats réalisée avec succès ici : ${0}`,
-  http_server_started: "Serveur HTTP démarré sur :",
-  commands: {
-    option_depth: "Niveau de profondeur de dépendances maximum à aller chercher",
-    option_output: "Nom de sortie du fichier json",
-    strategy: "Source de vulnérabilités à utiliser",
-    hydrate_db: {
-      desc: "Mise à jour de la base de vulnérabilité",
-      running: tS`Mise à jour locale des vulnérabilités avec la base '${0}'...`,
-      success: tS`Base de vulnérabilités mise à jour avec succès en ${0}`
-    },
-    cwd: {
-      desc: "Démarre une analyse de sécurité sur le dossier courant",
-      option_nolock: "Désactive l'utilisation du package-lock.json",
-      option_full: "Active l'analyse complète des packages présents dans le package-lock.json"
-    },
-    from: {
-      desc: "Démarre une analyse de sécurité sur un package donné du registre npm",
-      searching: tS`Recherche du manifest '${0}' dans le registre npm...`,
-      fetched: tS`Manifest du package ${0} importé de npm en ${1}`
-    },
-    auto: {
-      desc: "Démarre une analyse de sécurité sur le dossier courant ou sur un package donné et ouvre automatiquement l'interface web",
-      option_keep: "Conserve le fichier nsecure-result.json sur le systeme après l'exécution"
-    },
-    open: {
-      desc: "Démarre un serveur HTTP avec un fichier .json nsecure donné",
-      option_port: "Port à utiliser"
-    },
-    verify: {
-      desc: "Démarre une analyse AST avancée pour un package npm donné",
-      option_json: "Affiche le résultat d'analyse dans la sortie standard"
-    },
-    summary: {
-      desc: "Afficher le résultat de votre analyse",
-      warnings: "Menaces"
-    },
-    lang: {
-      desc: "Configure le langage par défaut du CLI",
-      question_text: "Quel langage souhaitez-vous utiliser ?",
-      new_selection: tS`'${0}' a été selectionné comme étant le nouveau langage du CLI !`
-    },
-    scorecard: {
-      desc: "Afficher la fiche de score OSSF du repo donné ou du repertoire actuel (Github uniquement ex. fastify/fastify)"
-    }
-  }
-};
-
 const depWalker = {
   dep_tree: "arbre de dépendances",
   fetch_and_walk_deps: "Importation et analyse de l'intégralité des dépendances...",
@@ -68,51 +16,6 @@ const depWalker = {
   success_tarball: tS`${0} tarballs analysés avec succès en ${1}`,
   success_registry_metadata: "Metadonnées requises pour tous les packages importées avec succès !",
   failed_rmdir: tS`Suppression du dossier ${0} échouée !`
-};
-
-const ui = {
-  stats: {
-    title: "Stats Globales",
-    total_packages: "Total des packages",
-    total_size: "Poids total",
-    indirect_deps: "Packages avec dépendances indirectes",
-    extensions: "Extensions",
-    licenses: "Licences",
-    maintainers: "Mainteneurs"
-  },
-  package_info: {
-    navigation: {
-      overview: "vue d'ensemble",
-      files: "fichiers",
-      dependencies: "scripts & dépendances",
-      warnings: "menaces dans le code",
-      vulnerabilities: "vulnérabilités",
-      licenses: "conformité des licences (SPDX)"
-    },
-    title: {
-      maintainers: "mainteneurs",
-      releases: "versions publiées",
-      files: "fichiers",
-      files_extensions: "extensions des fichiers",
-      unused_deps: "dépendances non utilisées ",
-      missing_deps: "dépendances manquantes",
-      minified_files: "fichiers minifiés",
-      node_deps: "dépendances node.js",
-      third_party_deps: "dépendances tierces",
-      required_files: "fichiers requis",
-      used_by: "utilisé par",
-      openSsfScorecard: "Fiche de score de sécurité"
-    },
-    helpers: {
-      warnings: "En savoir plus sur les alertes avec le",
-      spdx: "En savoir plus sur le projet SPDX",
-      here: "ici",
-      openSsf: "En savoir plus sur les fiches de score OpenSSF"
-    }
-  },
-  searchbar_placeholder: "Recherche",
-  loading_nodes: "... Chargement des noeuds ...",
-  please_wait: "(Merci de patienter)"
 };
 
 const warnings = {
@@ -138,4 +41,4 @@ const sast_warnings = {
   zeroSemVer: "Version sémantique commençant par 0.x (projet instable ou sans versionnement sérieux)"
 };
 
-export const french = { lang, cli, depWalker, ui, warnings, sast_warnings };
+export const french = { lang, depWalker, warnings, sast_warnings };

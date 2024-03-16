@@ -41,36 +41,10 @@
     </div>
     <div class="table__wrapper">
       <nav class="table__tabs" role="tablist">
-        <button id="table-cli-tab" class="table__tabs-item active" type="button" role="tab" aria-controls="table-cli" aria-selected="true">CLI</button>
         <button id="table-depwalker-tab" class="table__tabs-item" type="button" role="tab" aria-controls="table-depwalker" aria-selected="false">DEPWALKER</button>
-        <button id="table-ui-tab" class="table__tabs-item" type="button" role="tab" aria-controls="table-ui" aria-selected="false">UI</button>
         <button id="table-warnings-tab" class="table__tabs-item" type="button" role="tab" aria-controls="table-warnings" aria-selected="false">WARNINGS</button>
         <button id="table-sast-warnings-tab" class="table__tabs-item" type="button" role="tab" aria-controls="table-sast-warnings" aria-selected="false">SAST_WARNINGS</button>
       </nav>
-      <table id="table-cli" class="table active" role="tabpanel" aria-labelledby="table-cli-tab">
-        <thead>
-          <tr>
-            <th>Key</th>
-            <th>Value</th>
-          </tr>
-        </thead>
-        <tbody class="en active">
-        [[ for (props in z.template('cli', 'english')) { ]]
-          <tr>
-            <td>[[-z.printKey(props)]]</td>
-            <td>[[-z.printValue(props, z.template('cli', 'english'))]]</td>
-          </tr>
-        [[ } ]]
-        </tbody>
-        <tbody class="fr">
-          [[ for (props in z.template('cli', 'french')) { ]]
-            <tr>
-              <td>[[-z.printKey(props)]]</td>
-              <td>[[-z.printValue(props, z.template('cli', 'french'))]]</td>
-            </tr>
-          [[ } ]]
-          </tbody>
-      </table>
       <table id="table-depwalker" class="table" role="tabpanel" aria-labelledby="table-depwalker-tab">
         <thead>
           <tr>
@@ -91,30 +65,6 @@
               <tr>
                 <td>[[-z.printKey(props)]]</td>
                 <td>[[-z.printValue(props, z.template('depWalker', 'french'))]]</td>
-              </tr>
-            [[ } ]]
-            </tbody>
-      </table>
-      <table id="table-ui" class="table" role="tabpanel" aria-labelledby="table-ui-tab">
-        <thead>
-          <tr>
-            <th>Key</th>
-            <th>Value</th>
-          </tr>
-        </thead>
-        <tbody class="en">
-          [[ for (props in z.template('ui', 'english')) { ]]
-            <tr>
-              <td>[[-z.printKey(props)]]</td>
-              <td>[[-z.printValue(props, z.template('ui', 'english'))]]</td>
-            </tr>
-          [[ } ]]
-          </tbody>
-          <tbody class="fr">
-            [[ for (props in z.template('ui', 'french')) { ]]
-              <tr>
-                <td>[[-z.printKey(props)]]</td>
-                <td>[[-z.printValue(props, z.template('ui', 'french'))]]</td>
               </tr>
             [[ } ]]
             </tbody>
