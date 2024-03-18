@@ -33,7 +33,7 @@
   "devDependencies": {
     "@nodesecure/eslint-config": "^1.8.0",
     "c8": "^9.1.0",
-    "zup": "^0.0.1"
+    "zup": "^0.0.2"
   },
   "type": "module",
   "engines": {
