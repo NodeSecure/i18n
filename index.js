@@ -21,7 +21,6 @@ export const CONSTANTS = Object.seal({
   CACHE_PATH, CURRENT_LANG, LANG_UPDATED: true
 });
 
-
 export async function getLocalLang() {
   if (CONSTANTS.LANG_UPDATED) {
     try {
