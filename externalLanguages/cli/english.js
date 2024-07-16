@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 // Import Third-party Dependencies
-import { taggedString as tS } from "@nodesecure/i18n";
+import { taggedString as tS } from "../../src/utils.js";
 
 const cli = {
   executing_at: "Executing node-secure at",

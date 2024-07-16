@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
 
 // Require Internal Dependencies
-import { cli } from "../i18n/cli/english.js";
-import { scanner } from "../i18n/scanner/english.js";
+import cli from "../externalLanguages/cli/english.js";
+import scanner from "../externalLanguages/scanner/english.js";
 import { taggedString as tS } from "../src/utils.js";
 
 const lang = "en";

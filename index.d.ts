@@ -6,7 +6,7 @@ declare namespace i18n {
   export function getToken(token: string, ...parameters): Promise<string>;
   export function getTokenSync(token: string, ...parameters): string;
   export function getLanguages(): Promise<languages[]>;
-  export function taggedString(str: string, ...keys: any[]): (...keys: any[]) => string;
+  export function taggedString(str: string | TemplateStringsArray, ...keys: any[]): (...keys: any[]) => string;
   export function extend(language: string, tokens: Record<string, any>): void;
   export function extendFromSystemPath(path: string): Promise<void>;
   export function getAllTranslations(): Promise<object>;
