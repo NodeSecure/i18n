@@ -1,22 +1,5 @@
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/4438263/226019205-7d86a8d5-345f-416f-bc8d-c4aef6f12868.jpg" alt="@nodesecure/i18n">
-</p>
-
-<p align="center">
-    <a href="https://github.com/NodeSecure/i18n">
-      <img src="https://img.shields.io/badge/dynamic/json.svg?style=for-the-badge&url=https://raw.githubusercontent.com/NodeSecure/i18n/master/package.json&query=$.version&label=Version" alt="npm version">
-    </a>
-    <a href="https://github.com/NodeSecure/i18n/graphs/commit-activity">
-      <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge" alt="maintenance">
-    </a>
-    <a href="https://github.com/NodeSecure/i18n/blob/master/LICENSE">
-      <img src="https://img.shields.io/github/license/NodeSecure/i18n.svg?style=for-the-badge" alt="license">
-    </a>
-    <a href="https://api.securityscorecards.dev/projects/github.com/NodeSecure/i18n">
-      <img src="https://api.securityscorecards.dev/projects/github.com/NodeSecure/i18n/badge?style=for-the-badge" alt="OpenSSF Scorecard">
-    </a>
-      <img src="https://img.shields.io/github/actions/workflow/status/NodeSecure/i18n/node.js.yml?style=for-the-badge" alt="build">
-</p>
+> [!CAUTION]
+> This project (package) has been migrated to [Scanner](https://github.com/NodeSecure/scanner) monorepo, [here](https://github.com/NodeSecure/scanner/tree/master/workspaces/i18n)
 
 Internationalization (**i18n**) utilities for NodeSecure tools like [CLI](https://github.com/NodeSecure/cli). 
 
